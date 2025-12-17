@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/favicon.png" />
+    <title>Rusty Relics | Semester Project 2 | Portfolio</title>
+    <meta name="description" content="Project article: Rusty Relics (Semester Project 2)." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/article.js"></script>
+  </head>
+
+  <body class="mode-sketch">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <nav class="topbar__nav" aria-label="Top navigation">
+        <a class="topbar__home" href="../index.html" aria-label="Home">
+          <span class="swap swap--icon" aria-hidden="true">
+            <img
+              class="swap__img swap__img--sketch"
+              src="../assets/img/icon-home-sketch.webp"
+              alt=""
+              width="42"
+              height="42"
+              decoding="async"
+            />
+            <img
+              class="swap__img swap__img--final"
+              src="../assets/img/icon-home-final.webp"
+              alt=""
+              width="42"
+              height="42"
+              decoding="async"
+            />
+          </span>
+          <span class="topbar__homeText">Home</span>
+        </a>
+      </nav>
+
+      <div class="mode-toggle" role="group" aria-label="Display mode">
+        <span class="mode-toggle__label" aria-hidden="true">Sketch</span>
+
+        <button
+          class="toggle"
+          type="button"
+          data-mode-toggle
+          aria-pressed="false"
+          aria-label="Toggle between sketch and finished mode"
+        >
+          <span class="toggle__knob" aria-hidden="true"></span>
+        </button>
+
+        <span class="mode-toggle__label" aria-hidden="true">Finished</span>
+      </div>
+    </header>
+
+    <main id="main" class="container article">
+      <article class="article__wrap" aria-label="Project article">
+        <header class="article__header">
+          <p class="kicker">Semester Project 2</p>
+          <h1 class="article__title">Rusty Relics</h1>
+
+          <div class="article__actions">
+            <button class="btn" type="button" data-copy-link>Copy share link</button>
+
+            <a
+              class="btn btn--ghost"
+              href="https://rustyrelics.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open live site
+            </a>
+
+            <a
+              class="btn btn--ghost"
+              href="https://github.com/RunarPettersen/rustyrelics#readme"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open README
+            </a>
+          </div>
+
+          <p class="article__hint" data-copy-status aria-live="polite"></p>
+        </header>
+
+        <figure class="figure card-like">
+          <span class="swap">
+            <img
+              class="swap__img swap__img--sketch"
+              src="../assets/img/rustyrelicspage01.webp"
+              alt="Rusty Relics project image sketch"
+              width="1200"
+              height="675"
+              loading="eager"
+              decoding="async"
+            />
+            <img
+              class="swap__img swap__img--final"
+              src="../assets/img/rustyrelicspage02.webp"
+              alt="Rusty Relics project image finished"
+              width="1200"
+              height="675"
+              loading="eager"
+              decoding="async"
+            />
+          </span>
+          <figcaption class="figure__caption">
+            Rusty Relics: auction listings and bidding flow (replace with a real screenshot caption when ready).
+          </figcaption>
+        </figure>
+
+        <section class="content" aria-label="Project content">
+          <h2 class="section-title">Overview</h2>
+          <p>
+            Rusty Relics is an auction marketplace application. The project includes listing creation, bidding, user profiles,
+            and management features. For the portfolio version, the focus is polishing UX details and tightening the codebase
+            so the app feels consistent and reliable.
+          </p>
+
+          <h2 class="section-title">Links</h2>
+          <p class="inline-links">
+            Live:
+            <a class="inline-link" href="https://rustyrelics.netlify.app/" target="_blank" rel="noopener noreferrer"
+              >rustyrelics.netlify.app</a
+            >
+            <br />
+            Repository:
+            <a class="inline-link" href="https://github.com/RunarPettersen/rustyrelics" target="_blank" rel="noopener noreferrer"
+              >GitHub repo</a
+            >
+            <br />
+            README:
+            <a class="inline-link" href="https://github.com/RunarPettersen/rustyrelics#readme" target="_blank" rel="noopener noreferrer"
+              >README</a
+            >
+          </p>
+
+          <h2 class="section-title">What I improved</h2>
+          <ul class="list">
+            <li>Replace this with your real improvements and commit links in the PDF reflection.</li>
+            <li>Example: safer UI rendering (less innerHTML, more createElement) and clearer empty states.</li>
+            <li>Example: improved delete flows with confirmations and success messaging.</li>
+          </ul>
+
+          <div class="back">
+            <a class="btn" href="../index.html">← Back to home</a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <p class="footer__text">© <span data-year></span> Runar Pettersen</p>
+
+          <nav class="social" aria-label="Social links">
+            <a
+              class="social__link"
+              href="https://github.com/RunarPettersen"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <span class="swap swap--icon" aria-hidden="true">
+                <img class="swap__img swap__img--sketch" src="../assets/img/icon-github-sketch.webp" alt="" decoding="async" />
+                <img class="swap__img swap__img--final" src="../assets/img/icon-github-final.webp" alt="" decoding="async" />
+              </span>
+            </a>
+
+            <a
+              class="social__link"
+              href="https://www.facebook.com/runarpettersen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <span class="swap swap--icon" aria-hidden="true">
+                <img class="swap__img swap__img--sketch" src="../assets/img/icon-facebook-sketch.webp" alt="" decoding="async" />
+                <img class="swap__img swap__img--final" src="../assets/img/icon-facebook-final.webp" alt="" decoding="async" />
+              </span>
+            </a>
+
+            <a
+              class="social__link"
+              href="https://www.instagram.com/runar_pettersen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <span class="swap swap--icon" aria-hidden="true">
+                <img class="swap__img swap__img--sketch" src="../assets/img/icon-instagram-sketch.webp" alt="" decoding="async" />
+                <img class="swap__img swap__img--final" src="../assets/img/icon-instagram-final.webp" alt="" decoding="async" />
+              </span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

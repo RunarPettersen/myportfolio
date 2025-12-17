@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="128x128" href="./assets/img/favicon.png" />
+    <title>Runar Pettersen | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio featuring Howling (CSS Frameworks), Chopping Mall (JavaScript Frameworks), and Rusty Relics (Semester Project 2)."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body class="mode-sketch">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <nav class="topbar__nav" aria-label="Top navigation">
+        <a class="topbar__home" href="./index.html" aria-current="page">
+          <span class="swap swap--icon" aria-hidden="true">
+            <img
+              class="swap__img swap__img--sketch"
+              src="./assets/img/icon-home-sketch.webp"
+              alt=""
+              width="42"
+              height="42"
+              decoding="async"
+            />
+            <img
+              class="swap__img swap__img--final"
+              src="./assets/img/icon-home-final.webp"
+              alt=""
+              width="42"
+              height="42"
+              decoding="async"
+            />
+          </span>
+          <span class="topbar__homeText">Home</span>
+        </a>
+      </nav>
+
+      <div class="mode-toggle" role="group" aria-label="Display mode">
+        <span class="mode-toggle__label" aria-hidden="true">Sketch</span>
+
+        <button
+          class="toggle"
+          type="button"
+          data-mode-toggle
+          aria-pressed="false"
+          aria-label="Toggle between sketch and finished mode"
+        >
+          <span class="toggle__knob" aria-hidden="true"></span>
+        </button>
+
+        <span class="mode-toggle__label" aria-hidden="true">Finished</span>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section class="hero" aria-label="Intro">
+        <a class="hero__logo card-like" href="./index.html" aria-label="Home">
+          <span class="swap swap--logo">
+            <img
+              class="swap__img swap__img--sketch"
+              src="./assets/img/logo-sketch.webp"
+              alt="Hand-drawn logo"
+              width="720"
+              height="260"
+              loading="eager"
+              decoding="async"
+            />
+            <img
+              class="swap__img swap__img--final"
+              src="./assets/img/logo-final.webp"
+              alt="Finished logo"
+              width="720"
+              height="260"
+              loading="eager"
+              decoding="async"
+            />
+          </span>
+        </a>
+
+        <p class="hero__sub">
+          Welcome to the portfolio of Runar Pettersen. From sketch to finish. Hover to reveal the finished look, or use the toggle (tap-friendly).
+        </p>
+      </section>
+
+      <section id="projects" class="grid" aria-label="Projects">
+        <article class="card">
+          <a class="card__link" href="./projects/css-frameworks.html" aria-label="Read more about Howling (CSS Frameworks)">
+            <div class="card__thumb">
+              <span class="swap">
+                <img
+                  class="swap__img swap__img--sketch"
+                  src="./assets/img/howlingpage01.webp"
+                  alt="Howling project thumbnail sketch"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="swap__img swap__img--final"
+                  src="./assets/img/howlingpage02.webp"
+                  alt="Howling project thumbnail finished"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+            </div>
+
+            <h2 class="card__title">Howling</h2>
+            <p class="card__desc clamp-2">
+              A Tailwind-built social feed client with auth, posting, filtering and profiles—styled as a clean, responsive Twitter parody.
+            </p>
+
+            <span class="card__cta" aria-hidden="true">Read more →</span>
+          </a>
+        </article>
+
+        <article class="card">
+          <a
+            class="card__link"
+            href="./projects/javascript-frameworks.html"
+            aria-label="Read more about Chopping Mall (JavaScript Frameworks)"
+          >
+            <div class="card__thumb">
+              <span class="swap">
+                <img
+                  class="swap__img swap__img--sketch"
+                  src="./assets/img/choppingmallpage01.webp"
+                  alt="Chopping Mall project thumbnail sketch"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="swap__img swap__img--final"
+                  src="./assets/img/choppingmallpage02.webp"
+                  alt="Chopping Mall project thumbnail finished"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+            </div>
+
+            <h2 class="card__title">Chopping Mall</h2>
+            <p class="card__desc clamp-2">
+              A React eCommerce store with product listing, product pages, cart, and checkout success, built with routing and state management.
+            </p>
+
+            <span class="card__cta" aria-hidden="true">Read more →</span>
+          </a>
+        </article>
+
+        <article class="card">
+          <a
+            class="card__link"
+            href="./projects/semester-project-2.html"
+            aria-label="Read more about Rusty Relics (Semester Project 2)"
+          >
+            <div class="card__thumb">
+              <span class="swap">
+                <img
+                  class="swap__img swap__img--sketch"
+                  src="./assets/img/rustyrelicspage01.webp"
+                  alt="Rusty Relics project thumbnail sketch"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="swap__img swap__img--final"
+                  src="./assets/img/rustyrelicspage02.webp"
+                  alt="Rusty Relics project thumbnail finished"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+            </div>
+
+            <h2 class="card__title">Rusty Relics</h2>
+            <p class="card__desc clamp-2">
+              An auction marketplace app with listings, bids, profile features and admin tools, polished for a smoother UX and cleaner codebase.
+            </p>
+
+            <span class="card__cta" aria-hidden="true">Read more →</span>
+          </a>
+        </article>
+      </section>
+
+      <section id="about" class="about" aria-label="About">
+        <h2 class="section-title">About</h2>
+        <p class="about__text">
+          Add a short intro here. Keep it simple: what you build, what you are looking for, and how to contact you.
+        </p>
+        <p class="about__text">
+          GitHub:
+          <a class="inline-link" href="https://github.com/RunarPettersen" target="_blank" rel="noopener noreferrer">github.com/RunarPettersen</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <p class="footer__text">© <span data-year></span> Runar Pettersen</p>
+
+          <nav class="social" aria-label="Social links">
+            <a class="social__link" href="https://github.com/RunarPettersen" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <span class="swap swap--icon" aria-hidden="true">
+                <img class="swap__img swap__img--sketch" src="./assets/img/icon-github-sketch.webp" alt="" decoding="async" />
+                <img class="swap__img swap__img--final" src="./assets/img/icon-github-final.webp" alt="" decoding="async" />
+              </span>
+            </a>
+
+            <a
+              class="social__link"
+              href="https://www.facebook.com/runarpettersen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <span class="swap swap--icon" aria-hidden="true">
+                <img class="swap__img swap__img--sketch" src="./assets/img/icon-facebook-sketch.webp" alt="" decoding="async" />
+                <img class="swap__img swap__img--final" src="./assets/img/icon-facebook-final.webp" alt="" decoding="async" />
+              </span>
+            </a>
+
+            <a
+              class="social__link"
+              href="https://www.instagram.com/runar_pettersen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <span class="swap swap--icon" aria-hidden="true">
+                <img class="swap__img swap__img--sketch" src="./assets/img/icon-instagram-sketch.webp" alt="" decoding="async" />
+                <img class="swap__img swap__img--final" src="./assets/img/icon-instagram-final.webp" alt="" decoding="async" />
+              </span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
