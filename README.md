@@ -4,11 +4,11 @@ This repository contains my portfolio website, built as a static site with HTML,
 
 ## Live site
 
-[TODO: add Netlify URL here](https://runarportfolio.netlify.app/)
+[Netlify](https://runarportfolio.netlify.app/)
 
 ## Repository
 
-[TODO: add GitHub repo URL here](https://github.com/RunarPettersen/myportfolio)
+[Github](https://github.com/RunarPettersen/myportfolio)
 
 ## What’s included
 
