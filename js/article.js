@@ -1,3 +1,10 @@
+/**
+ * Attempts to copy a string to the user's clipboard.
+ * Uses the Clipboard API when available (secure context), and falls back to a hidden textarea + execCommand.
+ *
+ * @param {string} text - The text to copy.
+ * @returns {Promise<boolean>} Resolves to true if the copy succeeded, otherwise false.
+ */
 async function copyToClipboard(text) {
   if (navigator.clipboard && window.isSecureContext) {
     await navigator.clipboard.writeText(text);
@@ -17,6 +24,16 @@ async function copyToClipboard(text) {
   return ok;
 }
 
+/**
+ * Wires up the "Copy share link" button (if present) to copy the current page URL to the clipboard.
+ * Updates a status element (if present) with a short success/error message.
+ *
+ * Expected markup:
+ * - Button: [data-copy-link]
+ * - Status text element: [data-copy-status]
+ *
+ * @returns {void}
+ */
 function initCopyLink() {
   const btn = document.querySelector("[data-copy-link]");
   const status = document.querySelector("[data-copy-status]");
